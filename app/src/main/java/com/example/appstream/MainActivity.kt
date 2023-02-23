@@ -16,7 +16,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LogIn::class.java)
             startActivity(intent)
         }
-
+        binding.getAll.setOnClickListener(){
+            val intent = Intent(this, ChoosePlan::class.java)
+            startActivity(intent)
+        }
 
     }
 

@@ -10,5 +10,8 @@ class LogIn : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLogInBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
     }
 }
