@@ -100,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgot your email or password?"
-            android:textColor="@color/material_dynamic_primary60"
+            android:textColor="#FF219BCC"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -135,11 +135,11 @@
             app:layout_constraintVertical_bias="0.305" />
 
         <TextView
-            android:id="@+id/freeTrial"
+            android:id="@+id/textView40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Start your free trial"
-            android:textColor="@color/material_dynamic_primary60"
+            android:textColor="#FF219BCC"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
