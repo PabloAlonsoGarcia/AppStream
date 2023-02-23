@@ -111,6 +111,7 @@
                                 app:layout_constraintVertical_bias="0.0">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraintLayout"
                                     android:layout_width="match_parent"
                                     android:layout_height="24dp"
                                     android:layout_marginBottom="178dp"
@@ -131,6 +132,41 @@
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="178dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                                    <TextView
+                                        android:id="@+id/textView27"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Disney Bundle\nTRio Basic"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.51"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="0.328" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.647"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/textView27"
+                                        app:layout_constraintVertical_bias="0.458" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -141,6 +177,7 @@
                                 android:layout_marginStart="50dp"
                                 android:background="#FFFFFF"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.0">
@@ -211,25 +248,103 @@
                 android:layout_width="match_parent"
                 android:layout_height="145dp">
 
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="198dp"
+                    android:layout_height="45dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.16"
+                    app:srcCompat="@drawable/superbundle_logo_color" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="376dp"
+                    android:layout_height="67dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Access live sports with ESPN+ (With Ads), endless entertainment with Disney+ (With Ads), and award-winning Hulu Originals with Hulu (With Ads). *Savings compared to regular monthly price of each service."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="18dp">
 
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Learn more"
+                    android:textColor="#02C6F6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.047"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="318.11dp">
+                android:layout_height="318.11dp"
+                android:background="#00FFFFFF">
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="339dp"
+                    android:layout_height="231dp"
+                    android:background="@drawable/texto_mail_contrasena"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="148dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.165"
+                        app:srcCompat="@drawable/_p_bundle" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="272dp"
+                        android:layout_height="34dp"
+                        android:text="Get Hulu (With Ads) and Disney+ (With Ads) for $9.99/month."
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.492"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                        app:layout_constraintVertical_bias="0.076" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:backgroundTint="#00FFFFFF"
+                        android:foreground="@drawable/texto_mail_contrasena"
+                        android:text="SELECCIONAR"
+                        android:textColor="#232323"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="140dp">
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 
