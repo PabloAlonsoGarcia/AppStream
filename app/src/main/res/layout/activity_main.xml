@@ -39,6 +39,20 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/hulu_logo" />
 
+                    <TextView
+                        android:id="@+id/logIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log in"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.904"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.509" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -49,22 +63,23 @@
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="115dp"
-                        android:layout_marginTop="34dp"
-                        android:layout_marginBottom="8dp"
                         android:text="DISNEY BUNDLE TRIO BASIC"
                         android:textColor="#1fd187"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.504"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.64" />
 
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="298dp"
                         android:layout_height="67dp"
-                        android:layout_marginStart="56dp"
-                        android:layout_marginTop="61dp"
+                        android:layout_marginTop="44dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.495"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/logo" />
@@ -73,12 +88,12 @@
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="48dp"
                         android:layout_marginTop="12dp"
                         android:text="Get Hulu, Disney+, and ESPN+, all with "
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -86,23 +101,24 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="112dp"
                         android:text="ads, for $12.99/month."
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.502"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
                     <Button
-                        android:id="@+id/button37"
+                        android:id="@+id/getAll"
                         android:layout_width="310dp"
                         android:layout_height="48dp"
-                        android:layout_marginStart="50dp"
-                        android:layout_marginTop="14dp"
                         android:backgroundTint="#1fd187"
                         android:text="GET ALL THREE"
                         android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.504"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -115,9 +131,10 @@
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/button37"
-                        app:layout_constraintVertical_bias="0.218" />
+                        app:layout_constraintTop_toBottomOf="@+id/getAll"
+                        app:layout_constraintVertical_bias="0.118" />
 
                     <TextView
                         android:id="@+id/textView6"
@@ -178,12 +195,12 @@
                         app:layout_constraintVertical_bias="0.153" />
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/getBoth"
                         android:layout_width="174.91dp"
                         android:layout_height="48dp"
                         android:background="#00FFFFFF"
                         android:foreground="@drawable/botonazo"
-                        android:text="Button"
+                        android:text="GET THEM BOTH"
                         android:textColor="@color/white"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -201,7 +218,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/button" />
+                        app:layout_constraintTop_toBottomOf="@+id/getBoth" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -305,7 +322,6 @@
                         android:orientation="horizontal"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.627"
                         app:layout_constraintStart_toEndOf="@+id/linearLayout6"
                         app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
                         app:layout_constraintVertical_bias="0.268">
@@ -314,6 +330,21 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="#73000000">
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Premiums"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.301"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView23"
+                                app:layout_constraintVertical_bias="0.004" />
 
                             <TextView
                                 android:id="@+id/textView23"
@@ -351,6 +382,20 @@
                             android:backgroundTint="#73000000">
 
                             <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hulu Originals"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView21"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <TextView
                                 android:id="@+id/textView21"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -374,7 +419,6 @@
                         android:orientation="horizontal"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.627"
                         app:layout_constraintStart_toEndOf="@+id/linearLayout3"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0">
@@ -467,28 +511,6 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="576dp"
-                android:background="#0b0c10"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="760dp"
-                android:background="@drawable/canasta"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1476.33dp"
-                android:background="#0b0c10"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="553dp"
-                android:orientation="vertical"></LinearLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
